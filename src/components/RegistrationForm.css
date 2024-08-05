@@ -1,0 +1,267 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.form-content {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.initial-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.initial-form h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  border: none;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.qr-code-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.qr-code-image {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.qr-code-container p {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+}
+/* .h3{
+  tex: orange;
+} */
+
+.header {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo-container {
+  margin-top: -60px; /* Adjust based on logo size to move it up */
+}
+
+.qr-code-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.header-logo {
+  max-width: 350px; /* Adjust size as needed */
+  height: auto;
+  margin-top: 60px;
+}
+
+.header-middle {
+  margin-top: 20px;
+}
+
+.header-middle h1 {
+  font-weight: bolder;
+}
+
+.registration-form {
+  width: 100%;
+  max-width: 600px; /* Adjust the max width of the form */
+  background: #f9f9f9; /* Background color of the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form label {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.registration-form input,
+.registration-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.registration-form select {
+  background-color: #fff;
+}
+
+.submit-btn {
+  background-color: #007bff; /* Button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+}
+
+/* Gender fieldset styling */
+.gender-fieldset {
+  display: flex;
+  align-items: center;
+  border: none; /* Remove border if desired */
+  padding: 0; /* Remove padding */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+.gender-fieldset legend {
+  margin-right: 20px; /* Spacing between legend and radio buttons */
+  font-weight: bold;
+}
+
+.gender-fieldset label {
+  margin-right: 20px; /* Space between radio buttons */
+  font-size: 16px; /* Font size */
+  display: flex;
+  align-items: center;
+}
+
+.gender-fieldset input[type="radio"] {
+  margin-right: 5px; /* Space between radio button and label */
+}
+/* For tablets and larger mobile devices */
+@media (max-width: 768px) {
+  .gender-fieldset label {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    margin-right: 15px; /* Adjust margin for smaller screens */
+  }
+
+  .header-logo {
+    max-width: 120px; /* Adjust logo size for tablets and mobile */
+  }
+
+  .header-image {
+    width: 100%;
+    height: 70px;
+    display: block;
+  }
+
+  .logo-container {
+    margin-top: -40px; /* Adjust position for smaller screens */
+  }
+
+  .registration-form {
+    max-width: 90%; /* Allow form to take more width on smaller screens */
+  }
+
+  .submit-btn {
+    font-size: 14px; /* Smaller button text for mobile */
+    padding: 8px 16px; /* Adjust button padding for mobile */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .gender-fieldset label {
+    font-size: 12px; /* Further adjust font size for very small screens */
+    margin-right: 10px; /* Further adjust margin for very small screens */
+  }
+  .header-image {
+    width: 100%;
+    height: 70px;
+    display: block;
+  }
+
+  .header-logo {
+    max-width: 100px; /* Further adjust logo size for very small screens */
+  }
+
+  .logo-container {
+    margin-top: -30px; /* Adjust position for very small screens */
+  }
+
+  .registration-form {
+    max-width: 95%; /* Allow form to take nearly full width on very small screens */
+    padding: 15px; /* Reduce padding for mobile */
+  }
+
+  .submit-btn {
+    font-size: 12px; /* Further reduce button text size for mobile */
+    padding: 6px 12px; /* Further reduce button padding for mobile */
+  }
+}
