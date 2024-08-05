@@ -174,7 +174,7 @@ const RegistrationForm = () => {
             name="place"
             value={formData.place}
             onChange={handleChange}
-            required
+            // required
           />
         </label>
         <label>
@@ -194,7 +194,7 @@ const RegistrationForm = () => {
             name="occupation"
             value={formData.occupation}
             onChange={handleChange}
-            required
+            // required
           >
             <option value="">Select</option>
             <option value="Student">Student</option>
@@ -209,7 +209,7 @@ const RegistrationForm = () => {
             name="source"
             value={formData.source}
             onChange={handleChange}
-            required
+            // required
           >
             <option value="">Select</option>
             <option value="Social Media">Social Media</option>
@@ -226,7 +226,7 @@ const RegistrationForm = () => {
             name="member"
             value={formData.member}
             onChange={handleChange}
-            required
+            // required
           />
         </label>
         
@@ -288,7 +288,7 @@ const RegistrationForm = () => {
                 name="age"
                 value={member.age}
                 onChange={(e) => handleMemberChange(index, e)}
-                required
+                // required
               />
             </label>
             <label>
@@ -297,7 +297,7 @@ const RegistrationForm = () => {
                 name="occupation"
                 value={member.occupation}
                 onChange={(e) => handleMemberChange(index, e)}
-                required
+                // required
               >
                 <option value="">Select</option>
                 <option value="Student">Student</option>
@@ -338,4 +338,27 @@ const RegistrationForm = () => {
                 type="text"
                 name="status"
                 value={member.status}
-                onChange={(e) => handleMemberCh
+                onChange={(e) => handleMemberChange(index, e)}
+                required
+              />
+            </label> */}
+            <button
+              type="button"
+              onClick={() => removeMember(index)}
+              className="submit-btn"
+            >
+              Remove Member
+            </button>
+          </div>
+        ))}
+        <button type="submit" className="submit-btn">
+          Submit
+        </button>
+      </form>
+      <img src={thetavge} alt="Logo" className="" style={{ height: "30px", width: "25px"}}/>
+      <h3 style={{ color: 'orange', marginTop: "10px" }}> Thetavega Tech</h3>
+    </div>
+  );
+};
+
+export default RegistrationForm;
